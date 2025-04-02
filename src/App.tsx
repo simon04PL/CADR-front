@@ -6,7 +6,7 @@ function App() {
     <>
       <CanvasController />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
