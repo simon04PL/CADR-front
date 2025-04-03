@@ -1,11 +1,11 @@
-import { Canvas, ThreeElements, useFrame } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
-import TorusController from './torus-controller'
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
+import TorusController from './torus-controller';
 
 function CanvasController() {
   return (
     <>
-      <Canvas camera={{position: [0, 0, 30]}}>
+      <Canvas camera={{ position: [0, 0, 30] }}>
         <ambientLight />
         <directionalLight position={[10, 10, 10]} />
         <TorusController position={[-5, 0, 0]} />
@@ -13,7 +13,7 @@ function CanvasController() {
         <OrbitControls enableDamping={false} />
       </Canvas>
     </>
-  )
+  );
 }
 
-export default CanvasController
+export default CanvasController;
