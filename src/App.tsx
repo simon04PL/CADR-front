@@ -1,11 +1,10 @@
 import './App.css';
-import CanvasController from './editor/canvas-controller';
-
+import Editor from './pages/Editor';
 
 function App() {
   return (
     <>
-      <CanvasController />
+      <Editor />
     </>
   );
 }
