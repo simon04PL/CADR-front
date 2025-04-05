@@ -1,4 +1,4 @@
-import './App.css';
+import './css/main.scss';
 import Editor from './pages/Editor';
 
 function App() {

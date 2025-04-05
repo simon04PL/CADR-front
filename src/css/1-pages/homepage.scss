@@ -1,0 +1,20 @@
+.home {
+
+    &__link {
+        text-decoration: none;
+        color: $c-white;
+    }
+
+    &__btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: $c-blue;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &--section {
+            margin-top: 20px;
+        }
+    }
+}
