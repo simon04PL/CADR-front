@@ -1,13 +1,14 @@
-import { JSX, MouseEventHandler } from "react";
+import { JSX } from "react";
 import TorusController from "./TorusController";
+import ToolBarItem from "./ToolBarItem.tsx";
+import { MenuItem } from "@mui/material";
 
 interface ToolbarProps {
-  addMesh: (mesh: JSX.Element) => void,
+  addMesh: (mesh: JSX.Element) => void
 };
 
 enum Shape {
   Torus,
-  Cube,
 };
 
 function Toolbar({ addMesh }: ToolbarProps) {
@@ -16,18 +17,16 @@ function Toolbar({ addMesh }: ToolbarProps) {
       case Shape.Torus:
         addMesh(<TorusController position={[0, 0, 0]} />)
         break;
-      case Shape.Cube:
-        console.log("cube");
-        break;
       default:
-        console.log("ouhuh");
         break;
     }
   }
 
   return (
-    <div className="Toolbar">
-      <p onClick={ (e) => { newMesh(e, Shape.Torus) } }>Object</p>
+    <div className="tool-bar">
+      <ToolBarItem label="Shapes">
+        <MenuItem onClick={(e) => {newMesh(e, Shape.Torus)}}>Torus</MenuItem>
+      </ToolBarItem>
     </div>
   );
 }

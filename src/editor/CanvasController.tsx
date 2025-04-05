@@ -4,8 +4,8 @@ import TorusController from './TorusController';
 import * as THREE from 'three';
 import { JSX } from 'react';
 
-type CanvasControllerParams = {
-  objects: JSX.Element[],
+interface CanvasControllerParams {
+  objects: JSX.Element[]
 };
 
 function CanvasController({ objects }: CanvasControllerParams) {

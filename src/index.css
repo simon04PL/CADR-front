@@ -87,3 +87,7 @@ button:focus-visible {
 .home__btn--section {
   margin-top: 20px;
 }
+
+.tool-bar {
+    background-color: white;
+}
